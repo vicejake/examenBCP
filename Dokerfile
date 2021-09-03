@@ -1,0 +1,4 @@
+FROM openjdk:11
+COPY ./target/examen-bcp-0.0.1-SNAPSHOT.jar /tmp/bcp-docker.jar
+WORKDIR /tmp
+CMD ["java","-jar","bcp-docker.jar"]
